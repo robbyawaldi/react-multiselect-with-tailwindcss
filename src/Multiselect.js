@@ -20,7 +20,7 @@ const Multiselect = () => {
             <div className="w-full">
                 <div className="flex flex-col items-center relative">
                     <div className="w-full ">
-                        <div className="my-2 p-1 flex border border-gray-200 bg-white rounded ">
+                        <div className="my-2 p-1 flex border border-gray-200 bg-white rounded min-w-min">
                             <div className="flex flex-auto flex-wrap">
                                 {
                                     selectedItems.map((tag, index) => {
@@ -39,9 +39,6 @@ const Multiselect = () => {
                                             </div>)
                                     })
                                 }
-                                <div className="flex-1">
-                                    <input onClick={toggleDropdown} readOnly className="bg-transparent p-1 px-2 appearance-none outline-none h-full w-full text-gray-800 cursor-pointer" />
-                                </div>
                             </div>
                             <div className="text-gray-300 w-8 py-1 pl-2 pr-1 border-l flex items-center border-gray-200" onClick={toggleDropdown}>
                                 <button className="cursor-pointer w-6 h-6 text-gray-600 outline-none focus:outline-none">
